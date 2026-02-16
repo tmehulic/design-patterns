@@ -1,0 +1,8 @@
+package com.tmehulic.designpatterns.strategy.headfirst.fly;
+
+public class FlyWithWings implements FlyBehavior {
+    @Override
+    public void fly() {
+        System.out.println("I'm flying!!");
+    }
+}
