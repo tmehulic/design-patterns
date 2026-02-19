@@ -1,5 +1,7 @@
 package com.tmehulic.designpatterns.strategy.spring;
 
+import com.tmehulic.designpatterns.strategy.spring.transaction.TransactionService;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,8 @@ import org.springframework.test.web.servlet.client.RestTestClient;
 public class SpringStrategyTests {
 
     @Autowired RestTestClient restTestClient;
+    @Autowired
+    TransactionService transactionService;
 
     @Test
     void dispatcherExampleTest() {
@@ -29,5 +33,10 @@ public class SpringStrategyTests {
                         .returnResult()
                         .getResponseBody();
         Assertions.assertEquals("It actually works!", response);
+    }
+
+    @Test
+    void transactionExampleTest() {
+        Assertions.assertThrows(Exception.class, () -> transactionService.executeTransaction());
     }
 }

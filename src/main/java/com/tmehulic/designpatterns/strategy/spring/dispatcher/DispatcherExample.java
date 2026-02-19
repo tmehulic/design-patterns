@@ -1,4 +1,4 @@
-package com.tmehulic.designpatterns.strategy.spring;
+package com.tmehulic.designpatterns.strategy.spring.dispatcher;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
