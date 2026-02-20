@@ -51,19 +51,19 @@ public class SpringStrategyTests {
         Resource classPathResource = resourceExample.load("classpath:example.txt");
 
         Assertions.assertTrue(classPathResource.exists());
-        Assertions.assertTrue(classPathResource instanceof ClassPathResource);
+        Assertions.assertInstanceOf(ClassPathResource.class, classPathResource);
 
         Resource fileUrlResource = resourceExample.load("file:src/test/resources/example.txt");
 
         Assertions.assertTrue(fileUrlResource.exists());
-        Assertions.assertTrue(fileUrlResource instanceof FileUrlResource);
+        Assertions.assertInstanceOf(FileUrlResource.class, fileUrlResource);
 
         Resource urlResource = resourceExample.load("https://www.google.com");
 
-        Assertions.assertTrue(urlResource instanceof UrlResource);
+        Assertions.assertInstanceOf(UrlResource.class, urlResource);
 
         Resource customResource = resourceExample.load("custom:example.txt");
 
-        Assertions.assertTrue(customResource instanceof CustomResource);
+        Assertions.assertInstanceOf(CustomResource.class, customResource);
     }
 }
