@@ -17,9 +17,15 @@ implementations in the Spring.
 * **Favor composition over inheritance.**  
   This allows us to change the behavior of the object at runtime.
 
+
+* **Strive for loosely coupled designs between objects that interact.**  
+  Loosely coupled designs allow you to change one part of the system without affecting other parts. This is often
+  achieved by using interfaces and dependency injection.
+
 ## Behavioral patterns
 
 [Strategy](src/main/java/com/tmehulic/designpatterns/strategy/Strategy.md)
+[Observer](src/main/java/com/tmehulic/designpatterns/observer/Observer.md)
 
 ## Creational patterns
 
