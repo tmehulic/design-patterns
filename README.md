@@ -30,3 +30,5 @@ implementations in the Spring.
 ## Creational patterns
 
 ## Structural patterns
+
+[Decorator](src/main/java/com/tmehulic/designpatterns/decorator/Decorator.md)
