@@ -22,6 +22,9 @@ implementations in the Spring.
   Loosely coupled designs allow you to change one part of the system without affecting other parts. This is often
   achieved by using interfaces and dependency injection.
 
+* **Classes should be open for extension, but closed for modification.** (_Open-Closed Principle_)  
+  This means that you should be able to add new functionality to a class without changing its existing code.
+
 ## Behavioral patterns
 
 [Strategy](src/main/java/com/tmehulic/designpatterns/strategy/Strategy.md)

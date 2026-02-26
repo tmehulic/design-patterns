@@ -1,5 +1,8 @@
 # The Decorator Pattern
 
+**The Decorator Pattern** attaches additional responsibilities to an object dynamically. Decorators provide a flexible
+alternative to subclassing for extending functionality.
+
 ## Applicability
 
 Use the Decorator pattern when you need to be able to assign extra behaviors to objects at runtime without breaking the
