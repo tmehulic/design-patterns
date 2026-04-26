@@ -6,7 +6,7 @@ instantiate. Factory Method lets a class defer instantiation to subclasses.
 **The Abstract Factory Pattern** provides an interface for creating families of related or dependent objects without
 specifying their concrete classes.
 
-## Applicability
+## Applicability ##
 
 ### Factory Method ###
 
@@ -27,3 +27,25 @@ future extensibility.
 
 Consider implementing the Abstract Factory when your have a class with a set of Factory Methods that blur its primary
 responsibility.
+
+## Spring ##
+
+### Factory Method ###
+
+Spring's overall Factory Method application is related to the way it manages beans. The example in the `spring` package
+showcases how the Factory Method pattern is used in Spring.
+
+* **The Factory Method Interface:** `org.springframework.beans.factory.FactoryBean`
+* **The Logic:** "Here is a FactoryBean. Use it to create an instance of the object it produces."
+
+Other Factory Method patterns in Spring also include:
+
+- `@Bean` methods are essentially factory methods for creating beans
+- `BeanFactory` for bean creation and management
+- `ObjectFactory` for lazy retrieval of beans
+- `ObjectProvider` for optional retrieval of beans
+
+### Abstract Factory ###
+
+Spring's application of Abstract Factory is related to the groups of related beans that it manages, or in other words,
+where all of them must be consistent with each other.
